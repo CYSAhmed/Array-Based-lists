@@ -194,7 +194,7 @@ void arrayList<elemType>::removeAtPos(elemType pos)
 }
 //10
 template<class elemType>
-elemType arrayList<elemType>::search(elemType element)
+elemType arrayList<elemType>::seqSearch(elemType element)
 {
 
 	for (int i = 0; i < length; i++)
@@ -277,7 +277,7 @@ int main()
 	arrayList<int>ar(100);
 	ar.insertAtPos(0, 1);
 	ar.insertAtPos(1, 2);
-	ar.insertAtEnd(50);
+	ar.insertEnd(50);
 	cout << ar.isItemEqual(1, 2) << endl;
 	ar.print();
 }
